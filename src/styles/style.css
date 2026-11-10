@@ -1,0 +1,269 @@
+@import url(fonts.css);
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    z-index: -1;
+    background-color: #f2f4f7;
+    background-image: url(../img/background.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.main_section {
+    min-height: 804px;
+}
+
+.header {
+    position: sticky;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 0 108px 20px;
+    padding: 0 20px;
+    height: 56px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.header_nav ul {
+    display: flex;
+    list-style: none;
+    gap: 23px;
+    padding: 0;
+}
+
+.header_title {
+    font-size: 20px;
+    color: #2D66EE;
+    font-family: 'Inter-Bold', sans-serif;
+}
+
+.nav_text {
+    font-size: 14px;
+    color: #101828;
+    font-family: 'SF Subhead Medium', sans-serif;
+}
+
+.header_phones_img {
+    width: 13.8px;
+    height: 19.8px;
+}
+
+.header_contacts {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 14px;
+    color: #2D66EE;
+    font-family: 'SF Subhead Medium', sans-serif;
+}
+
+.header_phones, .header_email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header_email_img {
+    width: 19.8px;
+    height: 15.8px;
+}
+
+.section_title {
+    font-size: 36px;
+    font-family: 'Inter-Bold', sans-serif;
+    color: #101828;
+}
+
+.section_description {
+    font-size: 15px;
+    font-family: 'SF Subhead Medium', sans-serif;
+    color: #101828;
+}
+
+.blue_clr {
+    color: #306FF5;
+}
+
+.section_title, .section_description {
+    margin: 0;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0 108px;
+    gap: 24px;
+    height: 220px;
+    width: 580px;
+}
+
+.section_form_title {
+    margin: 0;
+    width: 450px;
+    font-size: 20px;
+    font-family: 'SF Subhead Medium', sans-serif;
+    color: #101828;
+}
+
+.section_container_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    font-size: 13px;
+    font-family: 'SF Subhead Medium', sans-serif;
+    color: #667085;
+    border-bottom: 0.7px solid #D0D5DD;
+    gap: 4px;
+}
+
+.section_container_element input {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    padding: 4px 0 8px;
+    font-family: "SF Pro Regular", sans-serif;
+    font-size: 17px;
+}
+
+.section_container_element input::placeholder {
+    color: #101828;
+}
+
+.section_container {
+    display: flex;
+    height: 58px;
+    gap: 24px;
+    margin: 32px 0 0 0;    
+}
+
+.section_form {
+    height: 140px;
+    width: 631px;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+    margin: 0 0 0 108px;
+}
+
+.country_image {
+    width: 20px;
+    height: 20px;
+}
+
+.phone_blok {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.section_container_button {
+    width: 132px;
+    height: 58px;
+    border-radius: 8px;
+    padding: 11px 24px;
+    color: #FFFFFF;
+    background: #2D66EE;
+    border: none;
+    text-align: left;
+    font-family: "SF Pro Semibold", sans-serif;
+    font-size: 14px;
+}
+
+.footer {
+    height: 239px;
+    background-color: #101828;
+    color: #FFFFFF;
+    margin: 0 108px;
+    border-radius: 12px;
+    margin-top: auto;
+}
+
+.footer_link {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter-Bold", sans-serif;
+    color: #FFFFFF;
+    font-size: 36px;
+    padding: 24px 0 0 0;
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 24px;
+    font-family: 'SF Pro Semibold', sans-serif;
+    font-size: 17px;
+}
+
+.footer_items_element_title_image {
+    width: 20px;
+    height: 16px;
+}
+
+.footer_items_element_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer_items_element_title_description {
+    font-family: "SF Subhead Medium", sans-serif;
+    color: #98A2B3;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer_items_element_info {
+    font-family: "SF Pro Semibold", sans-serif;
+    color: #FFFFFF;
+    font-size: 17px;
+    margin: 8px 0 0 0;
+}
+
+
+.footer_items_description {
+    font-family: "SF Pro Regular", sans-serif;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer_info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.footer_items_image {
+    height: 16px;
+    width: 30.41px;
+}
